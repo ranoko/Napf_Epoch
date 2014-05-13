@@ -54,7 +54,7 @@ DZAI_modName = "";
 
 //Enable or disable zombie attraction to AI weapon sounds. No effect if DZAI_zombieEnemy is set to false. Enabling this option may impact server performance as a script is run for each AI bullet fired.
 //Note: AI cannot be attacked or damaged by zombies.(Default: false)		
-DZAI_weaponNoise = false;
+DZAI_weaponNoise = true;
 
 //(Affects AI vehicles only) Sets frequency of vehicle ammo/fuel check. Decreasing this value may impact server performance. (Default: 15)											
 DZAI_refreshRate = 15;	
@@ -76,7 +76,7 @@ DZAI_findKiller = true;
 DZAI_tempNVGs = false;	
 
 //Amount of humanity to reward player for killing an AI unit (Default: 0)									
-DZAI_humanityGain = 0;										
+DZAI_humanityGain = 25;										
 
 //If enabled, players with radios will be given text warnings if they are being pursued by AI groups. (Default: true)
 DZAI_radioMsgs = true;
@@ -89,7 +89,7 @@ DZAI_useRadioAddon = false;
 --------------------------------------------------------------------------------------------------------------------*/	
 
 //Enable or disable static AI spawns. If enabled, AI spawn points will be generated in cities, towns, and other predefined areas. Does not affect custom-defined spawns (Default: true).
-DZAI_staticAI = true;
+DZAI_staticAI = false;
 
 //Set minimum and maximum wait time in seconds to respawn an AI group after all units have been killed. Applies to both static AI and custom spawned AI (Default: Min 300, Max 600).									
 DZAI_respawnTimeMin = 300;
@@ -106,10 +106,10 @@ DZAI_despawnWait = 120;
 DZAI_dynAISpawns = true;
 
 //Time (seconds) required to reach maximum spawn probability per player. Lower number = More frequent dynamic spawns, Higher Number = Less frequent. (Recommended range: 1200-2700, Default: 1800)
-DZAI_maxSpawnTime = 1800;
+DZAI_maxSpawnTime = 2700;
 
 //Probability to send first available AI helicopter to reinforce dynamic AI group. No effect if DZAI_maxHeliPatrols is set to zero. (Default: 0.75)
-DZAI_heliReinforceChance = 0.75;
+DZAI_heliReinforceChance = 0.50;
 
 //Array of area blacklist markers. Players within marker areas will not be targeted for dynamic AI spawns (Example: ["BlacklistArea1","BlacklistArea2","BlacklistArea3"])
 //Epoch: DZAI will automatically set up 200m-radius blacklist areas around each trader area.
@@ -124,11 +124,11 @@ DZAI_dynDespawnWait = 120;
 --------------------------------------------------------------------------------------------------------------------*/		
 
 //Maximum number of active AI air vehicle patrols. Set at 0 to disable (Default: 0).							
-DZAI_maxHeliPatrols = 0;
+DZAI_maxHeliPatrols = 1;
 
 //Set minimum and maximum wait time in seconds to respawn an AI vehicle patrol after vehicle is destroyed or disabled. (Default: Min 600, Max 900).
-DZAI_respawnTMinA = 600;
-DZAI_respawnTMaxA = 900;
+DZAI_respawnTMinA = 800;
+DZAI_respawnTMaxA = 1200;
 
 //Classnames of air vehicle types to use. Valid vehicle types: Helicopters and Planes (Default: "UH1H_DZ").
 //Air vehicles that are normally unarmed may have weapons added by DZAI (see "DZAI_airWeapons" setting below).								
@@ -321,7 +321,7 @@ DZAI_skill3 = [
 	["courage",0.80,1.00],
 	["reloadSpeed",0.80,0.90],
 	["commanding",0.80,0.90],
-	["general",0.80,1.00]
+	["general",0.70,0.90]
 ];
 
 //Note: Additional AI skill settings can be defined (DZAI_skill4 - DZAI_skill9) using the same format above.
@@ -358,7 +358,7 @@ DZAI_heliCrewSkills = [
 	["courage",0.80,1.00],
 	["reloadSpeed",0.80,1.00],
 	["commanding",0.80,1.00],
-	["general",0.80,1.00]
+	["general",0.70,0.90]
 ];
 
 

@@ -19,7 +19,7 @@ if (DZAI_debugLevel > 0) then {diag_log "DZAI V2 Dynamic Spawn Manager started."
 #define SELECT_RATIO 0.3
 
 //Frequency of each cycle
-#define SLEEP_DELAY 300
+#define SLEEP_DELAY 500
 //#define SLEEP_DELAY 60 //FOR DEBUGGING
 
 //Cycle frequency variance.

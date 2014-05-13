@@ -15,7 +15,7 @@
 
 	//Add your preferred settings below this line.
 	
-	DZAI_maxHeliPatrols = 5;									//Maximum number of active AI helicopters patrols. (Default: 0).
+	DZAI_maxHeliPatrols = 1;									//Maximum number of active AI helicopters patrols. (Default: 0).
 	DZAI_heliTypes = ["UH1H_DZ","Mi17_DZ"];						//Classnames of helicopter types to use. (Default: "UH1H_DZ").
 
 	-------------------------(End of Example File)-------------------------
