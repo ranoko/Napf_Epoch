@@ -106,7 +106,7 @@ DZAI_despawnWait = 120;
 DZAI_dynAISpawns = true;
 
 //Time (seconds) required to reach maximum spawn probability per player. Lower number = More frequent dynamic spawns, Higher Number = Less frequent. (Recommended range: 1200-2700, Default: 1800)
-DZAI_maxSpawnTime = 2700;
+DZAI_maxSpawnTime = 3000;
 
 //Probability to send first available AI helicopter to reinforce dynamic AI group. No effect if DZAI_maxHeliPatrols is set to zero. (Default: 0.75)
 DZAI_heliReinforceChance = 0.50;
